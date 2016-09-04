@@ -233,8 +233,8 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESP3212">
-<description>Ai-Thinker ESP3212 Module</description>
+<deviceset name="ESP3212" prefix="U">
+<description>Ai-Thinker ESP3212</description>
 <gates>
 <gate name="G$1" symbol="ESP3212" x="0" y="0"/>
 </gates>
