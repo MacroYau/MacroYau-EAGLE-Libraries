@@ -8,6 +8,8 @@ This repository includes PCB component libraries for selected electronic and ele
   - Ai-Thinker ESP3212 _(Obsolete)_
   - Ai-Thinker ESP-32S
   - Espressif Systems ESP-WROOM-32
+- [Espressif Systems ESP8266 SoC](https://www.espressif.com/en/products/hardware/esp8266ex/overview) (esp8266.lbr)
+  - Ai-Thinker ESP-12E
 
 ## Installation
 
