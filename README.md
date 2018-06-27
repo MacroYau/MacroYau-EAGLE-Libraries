@@ -4,6 +4,8 @@ This repository includes PCB component libraries for selected electronic and ele
 
 ## Components
 
+- Energy Harvesting Power Management IC (energy-harvesting-pmic.lbr)
+  - [Texas Instruments BQ25570](www.ti.com/product/bq25570)
 - [Espressif Systems ESP32 SoC](http://www.espressif.com/en/products/hardware/esp32/overview) (esp32.lbr)
   - Ai-Thinker ESP3212 _(Obsolete)_
   - Ai-Thinker ESP-32S
