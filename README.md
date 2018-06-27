@@ -12,6 +12,7 @@ This repository includes PCB component libraries for selected electronic and ele
   - Espressif Systems ESP-WROOM-32
 - [Espressif Systems ESP8266 SoC](https://www.espressif.com/en/products/hardware/esp8266ex/overview) (esp8266.lbr)
   - Ai-Thinker ESP-12E
+  - Espressif Systems ESP-WROOM-02
 
 ## Installation
 

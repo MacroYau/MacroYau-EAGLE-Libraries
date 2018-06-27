@@ -57,7 +57,21 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>Power Management ICs for Energy Harvesting</description>
+<description>&lt;b&gt;Energy Harvesting PMIC EAGLE Library&lt;/b&gt;
+
+&lt;p&gt;This library includes package footprints for selected types of energy harvesting power management IC (PMIC).&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;br /&gt;
+
+&lt;b&gt;Author: &lt;/b&gt;
+&lt;a href="https://github.com/MacroYau"&gt;Macro Yau&lt;/a&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;b&gt;License: &lt;/b&gt;
+&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International&lt;/a&gt;</description>
 <packages>
 <package name="RGR_S-PVQFN-N20">
 <description>&lt;b&gt;RGR (S-PVQFN-N20)&lt;/b&gt;&lt;p&gt;
