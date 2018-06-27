@@ -196,6 +196,39 @@
 <smd name="12" x="1" y="-11" dx="2" dy="1.2" layer="1" rot="R90"/>
 <smd name="13" x="3" y="-11" dx="2" dy="1.2" layer="1" rot="R90"/>
 </package>
+<package name="ESP-WROOM-02">
+<wire x1="-9" y1="10" x2="9" y2="10" width="0.127" layer="51"/>
+<wire x1="9" y1="10" x2="9" y2="-10" width="0.127" layer="51"/>
+<wire x1="9" y1="-10" x2="-9" y2="-10" width="0.127" layer="51"/>
+<wire x1="-9" y1="-10" x2="-9" y2="10" width="0.127" layer="51"/>
+<wire x1="-7.825" y1="3.15" x2="7.825" y2="3.15" width="0.127" layer="21"/>
+<wire x1="7.825" y1="3.15" x2="7.825" y2="-9.1" width="0.127" layer="21"/>
+<wire x1="-7.825" y1="-9.1" x2="-7.825" y2="3.15" width="0.127" layer="21"/>
+<smd name="9" x="-9.15" y="-9.1" dx="2" dy="0.9" layer="1"/>
+<text x="-8.89" y="-12.7" size="1.4224" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="8.89" y="-12.7" size="1.4224" layer="27" font="vector" ratio="12" align="bottom-right">&gt;VALUE</text>
+<rectangle x1="-14" y1="4" x2="14" y2="10" layer="41"/>
+<rectangle x1="-14" y1="4" x2="14" y2="10" layer="42"/>
+<wire x1="7.825" y1="-9.1" x2="-7.825" y2="-9.1" width="0.127" layer="21"/>
+<smd name="8" x="-9.15" y="-7.6" dx="2" dy="0.9" layer="1"/>
+<smd name="7" x="-9.15" y="-6.1" dx="2" dy="0.9" layer="1"/>
+<smd name="6" x="-9.15" y="-4.6" dx="2" dy="0.9" layer="1"/>
+<smd name="5" x="-9.15" y="-3.1" dx="2" dy="0.9" layer="1"/>
+<smd name="4" x="-9.15" y="-1.6" dx="2" dy="0.9" layer="1"/>
+<smd name="3" x="-9.15" y="-0.1" dx="2" dy="0.9" layer="1"/>
+<smd name="2" x="-9.15" y="1.4" dx="2" dy="0.9" layer="1"/>
+<smd name="1" x="-9.15" y="2.9" dx="2" dy="0.9" layer="1"/>
+<smd name="18" x="9.15" y="2.9" dx="2" dy="0.9" layer="1"/>
+<smd name="17" x="9.15" y="1.4" dx="2" dy="0.9" layer="1"/>
+<smd name="16" x="9.15" y="-0.1" dx="2" dy="0.9" layer="1"/>
+<smd name="15" x="9.15" y="-1.6" dx="2" dy="0.9" layer="1"/>
+<smd name="14" x="9.15" y="-3.1" dx="2" dy="0.9" layer="1"/>
+<smd name="13" x="9.15" y="-4.6" dx="2" dy="0.9" layer="1"/>
+<smd name="12" x="9.15" y="-6.1" dx="2" dy="0.9" layer="1"/>
+<smd name="11" x="9.15" y="-7.6" dx="2" dy="0.9" layer="1"/>
+<smd name="10" x="9.15" y="-9.1" dx="2" dy="0.9" layer="1"/>
+<smd name="19" x="1.12" y="-3.68" dx="4.3" dy="4.3" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP-12E">
@@ -227,6 +260,30 @@
 <pin name="SCLK" x="17.78" y="-12.7" length="middle" rot="R180"/>
 <text x="-12.7" y="-17.78" size="1.778" layer="95">&gt;NAME</text>
 <text x="12.7" y="-17.78" size="1.778" layer="96" align="bottom-right">&gt;VALUE</text>
+</symbol>
+<symbol name="ESP-WROOM-02">
+<wire x1="-15.24" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="-15.24" y2="12.7" width="0.254" layer="94"/>
+<pin name="RST" x="20.32" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="TOUT/ADC" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="EN" x="-20.32" y="7.62" length="middle" direction="in"/>
+<pin name="IO16" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="IO14/SCL" x="-20.32" y="5.08" length="middle"/>
+<pin name="3V3" x="-20.32" y="10.16" length="middle" direction="pwr"/>
+<pin name="GND" x="-20.32" y="-10.16" length="middle" direction="pwr"/>
+<pin name="IO2/SDA" x="-20.32" y="-5.08" length="middle"/>
+<pin name="IO0" x="-20.32" y="-7.62" length="middle"/>
+<pin name="IO4" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="IO5" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="RXD" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="TXD" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="IO15/CS" x="-20.32" y="-2.54" length="middle"/>
+<pin name="IO12/MISO" x="-20.32" y="2.54" length="middle"/>
+<pin name="IO13/MOSI" x="-20.32" y="0" length="middle"/>
+<text x="-15.24" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="15.24" y="-15.24" size="1.778" layer="96" align="bottom-right">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -260,6 +317,37 @@
 <connect gate="G$1" pin="SCLK" pad="14"/>
 <connect gate="G$1" pin="TXD" pad="22"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP-WROOM-02" prefix="U">
+<description>Espressif Systems ESP-WROOM-02</description>
+<gates>
+<gate name="G$1" symbol="ESP-WROOM-02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP-WROOM-02">
+<connects>
+<connect gate="G$1" pin="3V3" pad="1"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="GND" pad="9 13 18 19"/>
+<connect gate="G$1" pin="IO0" pad="8"/>
+<connect gate="G$1" pin="IO12/MISO" pad="4"/>
+<connect gate="G$1" pin="IO13/MOSI" pad="5"/>
+<connect gate="G$1" pin="IO14/SCL" pad="3"/>
+<connect gate="G$1" pin="IO15/CS" pad="6"/>
+<connect gate="G$1" pin="IO16" pad="17"/>
+<connect gate="G$1" pin="IO2/SDA" pad="7"/>
+<connect gate="G$1" pin="IO4" pad="10"/>
+<connect gate="G$1" pin="IO5" pad="14"/>
+<connect gate="G$1" pin="RST" pad="15"/>
+<connect gate="G$1" pin="RXD" pad="11"/>
+<connect gate="G$1" pin="TOUT/ADC" pad="16"/>
+<connect gate="G$1" pin="TXD" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>
