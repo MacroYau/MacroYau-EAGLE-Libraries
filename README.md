@@ -5,7 +5,8 @@ This repository includes PCB component libraries for selected electronic and ele
 ## Components
 
 - Energy Harvesting Power Management IC (energy-harvesting-pmic.lbr)
-  - [Texas Instruments BQ25570](www.ti.com/product/bq25570)
+  - [Texas Instruments BQ25570](http://www.ti.com/product/bq25570)
+  - [Texas Instruments TPS7A05](http://www.ti.com/product/TPS7A05)
 - Energy Harvesting Transducer (energy-harvesting-transducer.lbr)
   - IXYS KXOB22 Series Solar Cell
 - Energy Storage (energy-storage.lbr)
