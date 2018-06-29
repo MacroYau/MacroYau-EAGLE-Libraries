@@ -8,6 +8,8 @@ This repository includes PCB component libraries for selected electronic and ele
   - [Texas Instruments BQ25570](www.ti.com/product/bq25570)
 - Energy Harvesting Transducer (energy-harvesting-transducer.lbr)
   - IXYS KXOB22 Series Solar Cell
+- Energy Storage (energy-storage.lbr)
+  - Keystone Electronics 1024 SMT AA Cell Holder
 - [Espressif Systems ESP32 SoC](http://www.espressif.com/en/products/hardware/esp32/overview) (esp32.lbr)
   - Ai-Thinker ESP3212 _(Obsolete)_
   - Ai-Thinker ESP-32S
