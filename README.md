@@ -20,7 +20,7 @@ This repository includes PCB component libraries for selected electronic and ele
 
 ## Installation
 
-Download the latest [ZIP file](https://github.com/MacroYau/MacroYau-EAGLE-Libraries/archive/master.zip) (or via Git) and extract the `MacroYau-Eagle-Libraries` folder to the `lbr` folder inside your EAGLE installation directory. By default, the installation location should be:
+Download the latest [ZIP file](https://github.com/MacroYau/MacroYau-EAGLE-Libraries/archive/master.zip) (or via Git) and extract the `MacroYau-EAGLE-Libraries` folder to the `lbr` folder inside your EAGLE installation directory. By default, the installation location should be:
 
 - `/Applications/EAGLE-9.0.1/lbr` (macOS)
 - `C:\Program Files\EAGLE-9.0.1\lbr` (Windows)
