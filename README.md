@@ -5,6 +5,7 @@ This repository includes PCB component libraries for selected electronic and ele
 ## Components
 
 - Energy Harvesting Power Management IC (energy-harvesting-pmic.lbr)
+  - [STMicroelectronics STC3100](https://www.st.com/en/power-management/stc3100.html)
   - [Texas Instruments BQ25570](http://www.ti.com/product/bq25570)
   - [Texas Instruments TPS7A05](http://www.ti.com/product/TPS7A05)
 - Energy Harvesting Transducer (energy-harvesting-transducer.lbr)
