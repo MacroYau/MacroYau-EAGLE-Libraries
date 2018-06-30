@@ -81,8 +81,8 @@
 <wire x1="-11" y1="3.5" x2="-11" y2="-3.5" width="0.127" layer="51"/>
 <smd name="+" x="-10.25" y="0" dx="2.5" dy="4" layer="1"/>
 <smd name="-" x="10.25" y="0" dx="2.5" dy="4" layer="1"/>
-<text x="-11.43" y="-5.08" size="1.27" layer="21">&gt;NAME</text>
-<text x="11.43" y="-5.08" size="1.27" layer="21" align="bottom-right">&gt;VALUE</text>
+<text x="-11.43" y="-5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="11.43" y="-5.08" size="1.27" layer="27" align="bottom-right">&gt;VALUE</text>
 <wire x1="-7.239" y1="0" x2="-8.001" y2="0" width="0.254" layer="21"/>
 <wire x1="-7.62" y1="0.381" x2="-7.62" y2="-0.381" width="0.254" layer="21"/>
 <wire x1="8.001" y1="0" x2="7.239" y2="0" width="0.254" layer="21"/>
