@@ -55,6 +55,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;Energy Harvesting PMIC EAGLE Library&lt;/b&gt;
@@ -382,6 +383,24 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <text x="0" y="2.6099" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.235" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="DFN6-2X3" urn="urn:adsk.eagle:footprint:16011/1">
+<description>&lt;b&gt;DCB Package 6-Lead Plastic DFN (2mm × 3mm)&lt;/b&gt;&lt;p&gt;
+Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C1032,C1063,P26952,D16357</description>
+<wire x1="-0.9" y1="-1.4" x2="-0.9" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="1.4" x2="0.9" y2="1.4" width="0.2032" layer="51"/>
+<wire x1="0.9" y1="1.4" x2="0.9" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="0.9" y1="-1.4" x2="-0.9" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="EXP" x="0" y="0" dx="1.35" dy="1.65" layer="1"/>
+<smd name="1" x="-0.5" y="-1.425" dx="0.25" dy="0.7" layer="1" roundness="25"/>
+<smd name="2" x="0" y="-1.425" dx="0.25" dy="0.7" layer="1" roundness="25"/>
+<smd name="3" x="0.5" y="-1.425" dx="0.25" dy="0.7" layer="1" roundness="25"/>
+<smd name="4" x="0.5" y="1.425" dx="0.25" dy="0.7" layer="1" roundness="25" rot="R180"/>
+<smd name="5" x="0" y="1.425" dx="0.25" dy="0.7" layer="1" roundness="25" rot="R180"/>
+<smd name="6" x="-0.5" y="1.425" dx="0.25" dy="0.7" layer="1" roundness="25" rot="R180"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.65" y1="-1.025" x2="-0.1" y2="-0.9" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P490X110-8" urn="urn:adsk.eagle:package:3853610/1" locally_modified="yes" type="model">
@@ -447,6 +466,20 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <pin name="VIN" x="12.7" y="0" length="short" direction="pas" rot="R180"/>
 <pin name="CG" x="12.7" y="-7.62" length="short" direction="pas" rot="R180"/>
 <pin name="IO0" x="-12.7" y="-2.54" length="short"/>
+</symbol>
+<symbol name="LTC2941">
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="SDA" x="-15.24" y="2.54" length="short"/>
+<pin name="!AL!/CC" x="-15.24" y="5.08" length="short" direction="out"/>
+<pin name="SCL" x="-15.24" y="0" length="short"/>
+<pin name="GND" x="-15.24" y="-5.08" length="short" direction="pwr"/>
+<pin name="SENSE-" x="15.24" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="SENSE+" x="15.24" y="5.08" length="short" direction="in" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -529,6 +562,52 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3853610/1"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC2942" prefix="U">
+<description>&lt;b&gt;Battery Gas Gauge with Temperature, Voltage Measurement&lt;/b&gt;
+&lt;p&gt;The LTC2942 measures battery charge state, battery voltage and chip temperature in handheld PC and portable product applications. Its operating range is perfectly suited for single-cell Li-Ion batteries. A precision coulomb counter integrates current through a sense resistor between the battery’s positive terminal and the load or charger. Battery voltage and on-chip temperature are measured with an internal 14-bit No Latency ΔΣ™ ADC. The three measured quantities (charge, voltage and temperature) are stored in internal registers accessible via the on-board SMBus/I&lt;sup&gt;2&lt;/sup&gt;C interface.&lt;/p&gt;
+&lt;p&gt;Source: http://www.analog.com/en/products/power-management/battery-management/coulomb-counter/ltc2942.html&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC2941" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DCB" package="DFN6-2X3">
+<connects>
+<connect gate="G$1" pin="!AL!/CC" pad="5"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="SENSE+" pad="1"/>
+<connect gate="G$1" pin="SENSE-" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC2941" prefix="U">
+<description>&lt;b&gt;Battery Gas Gauge with I&lt;sup&gt;2&lt;/sup&gt;C Interface&lt;/b&gt;
+&lt;p&gt;The LTC2941 measures battery charge state in battery-supplied handheld PC and portable product applications. Its operating range is perfectly suited for single-cell Li-Ion batteries. A precision coulomb counter integrates current through a sense resistor between the battery’s positive terminal and the load or charger. The measured charge is stored in internal registers. An SMBus/I&lt;sup&gt;2&lt;/sup&gt;C interface accesses and configures the device.&lt;/p&gt;
+&lt;p&gt;Source: http://www.analog.com/en/products/power-management/battery-management/coulomb-counter/ltc2941.html&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LTC2941" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DCB" package="DFN6-2X3">
+<connects>
+<connect gate="G$1" pin="!AL!/CC" pad="5"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="SENSE+" pad="1"/>
+<connect gate="G$1" pin="SENSE-" pad="6"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
