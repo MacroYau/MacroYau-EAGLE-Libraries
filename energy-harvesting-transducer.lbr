@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -43,7 +43,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="61" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
@@ -86,6 +86,12 @@
 <wire x1="-7.239" y1="0" x2="-8.001" y2="0" width="0.254" layer="21"/>
 <wire x1="-7.62" y1="0.381" x2="-7.62" y2="-0.381" width="0.254" layer="21"/>
 <wire x1="8.001" y1="0" x2="7.239" y2="0" width="0.254" layer="21"/>
+<wire x1="-11" y1="-3.5" x2="11" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="11" y1="3.5" x2="-11" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-11" y1="3.5" x2="-11" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-11" y1="-3.5" x2="-11" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="11" y1="-3.5" x2="11" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="11" y1="3.5" x2="11" y2="2.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
