@@ -123,6 +123,34 @@
 <wire x1="-2.75" y1="-3.8" x2="-2.75" y2="-1.8" width="0.1524" layer="51" style="longdash"/>
 <wire x1="-2.75" y1="-1.8" x2="-1.25" y2="-1.8" width="0.1524" layer="51" style="longdash"/>
 </package>
+<package name="PTS820">
+<smd name="1" x="-2.075" y="0" dx="1.4" dy="0.95" layer="1" rot="R90"/>
+<smd name="2" x="2.075" y="0" dx="1.4" dy="0.95" layer="1" rot="R90"/>
+<hole x="0" y="0.9" drill="0.8"/>
+<hole x="0" y="-0.9" drill="0.8"/>
+<rectangle x1="-2.15" y1="1.15" x2="-1" y2="1.9" layer="39"/>
+<rectangle x1="1" y1="1.15" x2="2.15" y2="1.9" layer="39"/>
+<rectangle x1="-2.15" y1="-1.9" x2="-1" y2="-1.15" layer="39"/>
+<rectangle x1="1" y1="-1.9" x2="2.15" y2="-1.15" layer="39"/>
+<wire x1="-1.95" y1="1.45" x2="1.95" y2="1.45" width="0.127" layer="51"/>
+<wire x1="1.95" y1="1.45" x2="1.95" y2="0.5" width="0.127" layer="51"/>
+<wire x1="1.95" y1="0.5" x2="1.95" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="1.95" y1="-0.5" x2="1.95" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="1.95" y1="-1.45" x2="-1.95" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="-1.45" x2="-1.95" y2="-0.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="-0.5" x2="-1.95" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="0.5" x2="-1.95" y2="1.45" width="0.127" layer="51"/>
+<wire x1="1.95" y1="-0.5" x2="2.2" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="2.2" y1="-0.5" x2="2.2" y2="0.5" width="0.127" layer="51"/>
+<wire x1="2.2" y1="0.5" x2="1.95" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-1.95" y1="0.5" x2="-2.2" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-2.2" y1="0.5" x2="-2.2" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-2.2" y1="-0.5" x2="-1.95" y2="-0.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="-1.45" x2="1.95" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="1.45" x2="1.95" y2="1.45" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DPDT">
@@ -148,6 +176,15 @@
 <pin name="COM2" x="-5.08" y="-7.62" visible="pad" length="short" direction="pas"/>
 <pin name="B2" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="A2" x="5.08" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="SPST_NO">
+<wire x1="-3.175" y1="0" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0" x2="3.175" y2="0" width="0.254" layer="94"/>
+<text x="-3.81" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -191,6 +228,23 @@
 <connect gate="G$1" pin="B2" pad="6"/>
 <connect gate="G$1" pin="COM1" pad="2"/>
 <connect gate="G$1" pin="COM2" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PTS820" prefix="S">
+<description>C&amp;K Components PTS820 Series Microminiature SMT Top Actuated</description>
+<gates>
+<gate name="G$1" symbol="SPST_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PTS820">
+<connects>
+<connect gate="G$1" pin="P" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
